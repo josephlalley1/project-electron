@@ -19,12 +19,12 @@
 
 .side-icon1 {
   display: block;
-  width: 24px;
+  width: 20px;
 }
 
 .side-icon2:first-of-type {
   display: block;
-  width: 24px;
+  width: 20px;
   margin: 0 auto;
   margin-top: 31px;
   opacity: 0.4;
@@ -32,27 +32,26 @@
 
 .side-icon2 {
   display: block;
-  width: 24px;
+  width: 20px;
   margin: 0 auto;
   margin-top: 40px;
   opacity: 0.4;
 }
 
 .profile-pic {
-  bottom: 22px;
   width: 32px;
+  height: 32px;
+  bottom: 22px;
+  margin-left: calc(50% - 16px);
   border-radius: 100%;
-  padding: 10px;
-  display: block;
-  margin: 0 auto;
   position: absolute;
 }
 
 .icon-container {
-  width: 24px;
+  width: 20px;
   background-color: #323547;
   border-radius: 100%;
-  padding: 10px;
+  padding: 12px;
   margin: 0 auto;
   margin-top: 20px;
 }
