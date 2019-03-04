@@ -57,9 +57,15 @@
 }
 
 .main-content {
-  background-color: red;
+  background-color: white;
   height: 100%;
   right: 0;
   width: 90%;
   position: absolute;
+}
+
+.header {
+  height: 64px;
+  background-color: white;
+  border-bottom: 1px solid #EAEAF1;
 }
