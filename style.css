@@ -6,13 +6,53 @@
   top:0;
   left:0;
 
-  width: 13%;
+  width: 10%;
   height: 100%;
   background-color: #292B37;
 }
 
-@media (min-width: 640px) {
+@media (max-width: 640px) {
   .sidebar {
     background-color: orange;
   }
+}
+
+.side-icon1 {
+  display: block;
+  width: 24px;
+}
+
+.side-icon2:first-of-type {
+  display: block;
+  width: 24px;
+  margin: 0 auto;
+  margin-top: 31px;
+  opacity: 0.4;
+}
+
+.side-icon2 {
+  display: block;
+  width: 24px;
+  margin: 0 auto;
+  margin-top: 40px;
+  opacity: 0.4;
+}
+
+.profile-pic {
+  bottom: 22px;
+  width: 32px;
+  border-radius: 100%;
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+}
+
+.icon-container {
+  width: 24px;
+  background-color: #323547;
+  border-radius: 100%;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 20px;
 }
