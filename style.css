@@ -55,3 +55,11 @@
   margin: 0 auto;
   margin-top: 20px;
 }
+
+.main-content {
+  background-color: red;
+  height: 100%;
+  right: 0;
+  width: 90%;
+  position: absolute;
+}
