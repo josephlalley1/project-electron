@@ -119,13 +119,17 @@ h3 {
 
 .table-heading {
   height: 44px;
-  background-color: green;
 }
 
 .menu-title {
   width: 150px;
   padding-left: 22px;
   padding-top: 2px;
+}
+
+.main-menu {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .task-title {
@@ -156,4 +160,22 @@ h3 {
 
 .controls-spacing {
   padding-left: 20px;
+}
+
+.ie-icon-box {
+  background-color: #F0F0F4;
+  display: inline-block;
+  padding: 8px 10px;
+  border-radius: 44px;
+}
+
+.ie-box {
+  text-align: right;
+  width: 100px;
+  padding-right: 22px;
+}
+
+.table-contents {
+  height: 100%;
+  background-color: #EAEAF1;
 }
