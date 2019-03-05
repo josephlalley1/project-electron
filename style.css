@@ -6,6 +6,12 @@ h2 {
   color: #323547;
 }
 
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: #323547;
+}
+
 .sidebar {
   position:fixed;
   padding:0;
@@ -119,4 +125,28 @@ h2 {
 .menu-title {
   width: 150px;
   padding-left: 22px;
+}
+
+.task-title {
+  display: inline-block;
+}
+
+.control-box {
+  background-color: #F0F0F4;
+  display: inline-block;
+  padding: 7px 10px;
+  border-radius: 44px;
+}
+
+.control-icon {
+  padding: 0 5px;
+}
+
+.task-controls {
+  display: flex;
+  align-items: center;
+}
+
+.task-box {
+  display: inline-block;
 }
