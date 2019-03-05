@@ -1,3 +1,11 @@
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  color: #323547;
+}
+
 .sidebar {
   position:fixed;
   padding:0;
@@ -95,4 +103,19 @@
 
 .circle-spacing {
   padding-right: 10px;
+}
+
+.control-menu {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.table-heading {
+  height: 44px;
+  background-color: green;
+}
+
+.menu-title {
+  padding-left: 22px;
 }
