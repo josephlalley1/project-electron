@@ -65,6 +65,7 @@
 }
 
 .sound-icons {
+  width: 100px;
   padding-left: 22px;
 }
 
@@ -87,6 +88,8 @@
 }
 
 .header-ellipse {
+  text-align: right;
+  width: 100px;
   padding-right: 22px;
 }
 
