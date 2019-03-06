@@ -250,9 +250,11 @@ h3 {
 .entry-id {
   position: absolute;
   left: 70px;
+  width: 30px;
 }
 
 .entry-store {
   position: absolute;
   left: 115px;
+  width: 90px;
 }
