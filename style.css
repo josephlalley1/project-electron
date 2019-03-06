@@ -12,6 +12,13 @@ h3 {
   color: #323547;
 }
 
+.th-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: #B5B6C7;
+}
+
 .sidebar {
   position:fixed;
   padding:0;
@@ -118,6 +125,8 @@ h3 {
 }
 
 .table-heading {
+  display: flex;
+  align-items: center;
   height: 44px;
 }
 
@@ -178,4 +187,28 @@ h3 {
 .table-contents {
   height: 100%;
   background-color: #EAEAF1;
+}
+
+.checkboxes {
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.th-checkbox {
+  padding-left: 24px;
+}
+
+.arrow-spacing {
+  padding-bottom: 4px;
+  padding-left: 4px;
+}
+
+.th-id {
+  padding-left: 20px;
+  width: 40px;
+}
+
+.th-store {
+  width: 130px;
 }
