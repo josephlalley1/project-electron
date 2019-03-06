@@ -210,5 +210,21 @@ h3 {
 }
 
 .th-store {
-  width: 130px;
+  width: 100px;
+}
+
+.th-product {
+  width: 140px;
+}
+
+.th-size {
+  width: 60px;
+}
+
+.th-billing {
+  width: 100px;
+}
+
+.th-status {
+  width: 160px;
 }
