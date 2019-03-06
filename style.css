@@ -185,6 +185,7 @@ h3 {
 }
 
 .table-contents {
+  padding: 10px;
   height: 100%;
   background-color: #EAEAF1;
 }
@@ -227,4 +228,31 @@ h3 {
 
 .th-status {
   width: 160px;
+}
+
+.table-entries {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+}
+
+.entry-check {
+  padding-left: 14px;
+}
+
+.entry-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+}
+
+.entry-id {
+  position: absolute;
+  left: 70px;
+}
+
+.entry-store {
+  position: absolute;
+  left: 115px;
 }
