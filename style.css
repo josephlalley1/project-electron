@@ -277,7 +277,7 @@ h3 {
 
 .entry-size {
   position: absolute;
-  left: 386px;
+  left: 388px;
   width: 30px;
 }
 
@@ -291,4 +291,12 @@ h3 {
   position: absolute;
   left: 545px;
   width: 150px;
+}
+
+.submitting {
+  color: #5575E5;
+}
+
+.success {
+  color: #6CC888;
 }
