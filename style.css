@@ -309,9 +309,14 @@ h3 {
   color: #6CC888;
 }
 
+.declined {
+  color: #FF6D6D;
+}
+
 .entry-actions {
   left: 730px;
   position: absolute;
+  display: none;
 }
 
 .icon-spacing {
@@ -329,10 +334,48 @@ h3 {
   background-color: white;
   position: absolute;
   width: 166px;
-  height: 185px;
   left: 67px;
   z-index: -1;
   bottom: 22px;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
   border-radius: 8px 8px 8px 2px;
+}
+
+.profile-name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #323547;
+}
+
+.popup-spacing:nth-child(1) {
+  padding-left: 18px;
+  padding-top: 12px;
+  padding-bottom: 0px;
+}
+
+.popup-spacing:nth-child(5) {
+  padding-left: 18px;
+  padding-bottom: 0px;
+}
+
+.popup-spacing:last-of-type {
+  padding-left: 18px;
+  margin-bottom: 16px;
+  padding-bottom: 0px;
+}
+
+.popup-spacing {
+  padding-left: 18px;
+  padding-bottom: 16px;
+}
+
+hr {
+  margin: 16px 0;
+  border: 0.5px solid #E5E5E5;
+}
+
+.popup-spacing {
+  padding-left: 18px;
 }
