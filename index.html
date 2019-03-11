@@ -14,7 +14,11 @@
       </div>
       <img src="side-icon-deselected.svg" class="side-icon2" alt="">
       <img src="side-icon-deselected.svg" class="side-icon2" alt="">
-      <img src="profile-pic2.jpg" class="profile-pic" alt="">
+      <img src="profile-pic2.jpg" class="profile-pic" id="profile" alt="">
+    </div>
+
+    <div class="profile-popup" id="profile-popup">
+
     </div>
 
     <div class="main-content">
@@ -136,4 +140,20 @@
 
     </div>
   </body>
+  <script type="text/javascript">
+  const profile = document.getElementById('profile');
+  const profilePopup = document.getElementById('profile-popup');
+
+  const mainContent = document.getElementsByClassName('main-content')[0];
+  const sidebar = document.getElementsByClassName('sidebar')[0];
+
+  mainContent.addEventListener('click', function() {
+    profilePopup.style.zIndex = -1;
+  })
+
+  profile.addEventListener('click', function() {
+    profilePopup.style.zIndex = 1;
+  })
+
+  </script>
 </html>

@@ -324,3 +324,15 @@ h3 {
   width: 10px;
   background-color: red;
 }
+
+.profile-popup {
+  background-color: white;
+  position: absolute;
+  width: 166px;
+  height: 185px;
+  left: 67px;
+  z-index: -1;
+  bottom: 22px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px 8px 8px 2px;
+}
