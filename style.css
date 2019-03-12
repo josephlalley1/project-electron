@@ -348,6 +348,18 @@ h3 {
   z-index: 2;
 }
 
+.create-task-box {
+  position: absolute;
+  width: 430px;
+  height: 406px;
+  background-color: white;
+  z-index: 3;
+  right: 85px;
+  bottom: 22px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
 .profile-popup {
   background-color: white;
   position: absolute;
