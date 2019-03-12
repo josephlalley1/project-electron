@@ -204,12 +204,35 @@
   const createTaskBox = document.getElementsByClassName('create-task-box')[0];
   const contentOverlay = document.getElementsByClassName('create-task-overlay')[0];
 
-  createTaskBtn.addEventListener('click', function() {
+  let buttonActive = function(){
     contentOverlay.style.zIndex = 2;
     createTaskBox.style.zIndex = 3;
-    createTaskBtn.style.transform = 'rotate(45deg)';
+    createTaskBtn.style.transform = 'rotate(-45deg)';
     createTaskBtn.style.backgroundColor = '#32333E';
+  }
+
+  let buttonInactive = function(){
+    contentOverlay.style.zIndex = -1;
+    createTaskBox.style.zIndex = -1;
+    createTaskBtn.style.transform = 'rotate(0deg)';
+    createTaskBtn.style.backgroundColor = '#6CC888';
+  }
+
+  createTaskBtn.addEventListener('click', function() {
+    toggleFunctions(buttonActive, buttonInactive);
   })
+
+  let activated = false;
+
+  let toggleFunctions = function(active, inactive) {
+    if (activated === true) {
+      inactive();
+      activated = false;
+    } else {
+      active();
+      activated = true;
+    }
+  }
 
   // Hides actions on mouseout
   let hideActions = function() {
@@ -233,12 +256,16 @@
     tableRows[i].addEventListener('mouseout', hideActions);
   }
 
-  mainContent.addEventListener('click', function() {
+  let profilePopupActive = function() {
+    profilePopup.style.zIndex = 1;
+  }
+
+  let profilePopupInactive = function() {
     profilePopup.style.zIndex = -1;
-  })
+  }
 
   profile.addEventListener('click', function() {
-    profilePopup.style.zIndex = 1;
+    toggleFunctions(profilePopupActive, profilePopupInactive);
   })
 
   </script>
