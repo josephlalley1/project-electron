@@ -219,11 +219,11 @@ h3 {
 }
 
 .th-store {
-  width: 100px;
+  width: 150px;
 }
 
 .th-product {
-  width: 170px;
+  width: 180px;
 }
 
 .th-size {
@@ -274,30 +274,30 @@ h3 {
 .entry-store {
   position: absolute;
   left: 115px;
-  width: 90px;
+  width: 120px;
 }
 
 .entry-product {
   position: absolute;
-  left: 215px;
+  left: 265px;
   width: 160px;
 }
 
 .entry-size {
   position: absolute;
-  left: 388px;
+  left: 445px;
   width: 30px;
 }
 
 .entry-billing {
   position: absolute;
-  left: 446px;
+  left: 505px;
   width: 90px;
 }
 
 .entry-status {
   position: absolute;
-  left: 545px;
+  left: 605px;
   width: 150px;
 }
 
@@ -314,7 +314,7 @@ h3 {
 }
 
 .entry-actions {
-  left: 730px;
+  right: 22px;
   position: absolute;
   display: none;
 }
@@ -325,9 +325,17 @@ h3 {
 }
 
 .create-task {
-  height: 10px;
-  width: 10px;
-  background-color: red;
+  display: inline-block;
+  height: 50px;
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  width: 50px;
+  background-color: #6CC888;
+  border-radius: 50%;
+  text-align: center;
+  line-height: calc(50px + 11px);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .profile-popup {
