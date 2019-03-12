@@ -188,35 +188,46 @@
 
   </body>
   <script type="text/javascript">
+  // Selectors for the profile popup functions
   const profile = document.getElementById('profile');
   const profilePopup = document.getElementById('profile-popup');
 
+  // Selectors for the closing the profile popup functions
   const mainContent = document.getElementsByClassName('main-content')[0];
-  const sidebar = document.getElementsByClassName('sidebar')[0];
 
+  // Selectors for the task buttons functions
   const tableRows = document.getElementsByClassName('table-entries');
   const taskButtons = document.getElementById('task-actions');
 
+  // Selectors for the create task functions
+  const createTaskBtn = document.getElementsByClassName('create-task')[0];
+  const createTaskBox = document.getElementsByClassName('create-task-box')[0];
+  const contentOverlay = document.getElementsByClassName('create-task-overlay')[0];
+
+  createTaskBtn.addEventListener('click', function() {
+    contentOverlay.style.zIndex = 2;
+    createTaskBox.style.zIndex = 3;
+  })
 
   // Hides actions on mouseout
-  var hideActions = function() {
+  let hideActions = function() {
     let taskButtons = this.querySelector('.entry-actions');
     taskButtons.style.display = 'none';
   }
 
   // Displays actions on mouseover
-  var showActions = function() {
+  let showActions = function() {
     let taskButtons = this.querySelector('.entry-actions');
     taskButtons.style.display = 'block';
   }
 
   // Adds mouseover event listener to all rows in the table
-  for (var i = 0; i < tableRows.length; i++) {
+  for (let i = 0; i < tableRows.length; i++) {
     tableRows[i].addEventListener('mouseover', showActions);
   }
 
   // Adds mouseout event listener to all rows in the table
-  for (var i = 0; i < tableRows.length; i++) {
+  for (let i = 0; i < tableRows.length; i++) {
     tableRows[i].addEventListener('mouseout', hideActions);
   }
 
