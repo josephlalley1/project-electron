@@ -3,6 +3,7 @@
   <head>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
     <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
     <title>Electra</title>
@@ -205,15 +206,23 @@
   const contentOverlay = document.getElementsByClassName('create-task-overlay')[0];
 
   let buttonActive = function(){
-    contentOverlay.style.zIndex = 2;
-    createTaskBox.style.zIndex = 3;
+    createTaskBox.classList.remove('bounceOut');
+    createTaskBox.classList.add('bounceIn');
+    setTimeout(function() {
+      createTaskBox.style.display = 'block';
+      contentOverlay.style.display = 'block';
+    }, 700);
     createTaskBtn.style.transform = 'rotate(-45deg)';
     createTaskBtn.style.backgroundColor = '#32333E';
   }
 
   let buttonInactive = function(){
-    contentOverlay.style.zIndex = -1;
-    createTaskBox.style.zIndex = -1;
+    createTaskBox.classList.remove('bounceIn');
+    createTaskBox.classList.add('bounceOut');
+    setTimeout(function() {
+      createTaskBox.style.display = 'none';
+      contentOverlay.style.display = 'none';
+    }, 700);
     createTaskBtn.style.transform = 'rotate(0deg)';
     createTaskBtn.style.backgroundColor = '#6CC888';
   }
