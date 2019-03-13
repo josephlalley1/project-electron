@@ -412,7 +412,18 @@ hr {
 .popup-spacing {
   padding-left: 18px;
 }
-/* 
+
+.profile-section {
+  height: 76px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+
+.profile-section:hover {
+  background-color: #323547;
+}
+/*
 .bounceIn {
   animation-duration: 0.7s;
 } */
