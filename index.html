@@ -208,23 +208,24 @@
   const contentOverlay = document.getElementsByClassName('create-task-overlay')[0];
 
   let buttonActive = function(){
-    createTaskBox.classList.remove('bounceOut');
-    createTaskBox.classList.add('bounceIn');
-    setTimeout(function() {
-      createTaskBox.style.display = 'block';
-      contentOverlay.style.display = 'block';
-    }, 700);
+    contentOverlay.style.visibility = 'visible';
+    createTaskBox.style.visibility = 'visible';
+
+    createTaskBox.style.opacity = 1;
+    contentOverlay.style.opacity = 1;
+
     createTaskBtn.style.transform = 'rotate(-45deg)';
     createTaskBtn.style.backgroundColor = '#32333E';
   }
 
   let buttonInactive = function(){
-    createTaskBox.classList.remove('bounceIn');
-    createTaskBox.classList.add('bounceOut');
-    setTimeout(function() {
-      createTaskBox.style.display = 'none';
-      contentOverlay.style.display = 'none';
-    }, 700);
+    createTaskBox.style.opacity = 0;
+    contentOverlay.style.opacity = 0;
+    setTimeout(function(){
+      createTaskBox.style.visibility = 'hidden';
+      contentOverlay.style.visibility = 'hidden';
+    }, 700)
+
     createTaskBtn.style.transform = 'rotate(0deg)';
     createTaskBtn.style.backgroundColor = '#6CC888';
   }

@@ -345,9 +345,11 @@ h3 {
   height: 100%;
   right: 0;
   width: 92%;
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   z-index: 0;
-  display: none;
+  transition: opacity 0.25s ease;
 }
 
 .create-task-box {
@@ -360,7 +362,9 @@ h3 {
   bottom: 22px;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease;
 }
 
 .profile-popup {
