@@ -43,19 +43,9 @@ h3 {
   width: 20px;
 }
 
-.side-icon2:first-of-type {
-  display: block;
-  width: 20px;
-  margin: 0 auto;
-  margin-top: 31px;
-  opacity: 0.4;
-}
-
 .side-icon2 {
   display: block;
   width: 20px;
-  margin: 0 auto;
-  margin-top: 40px;
   opacity: 0.4;
 }
 
@@ -68,13 +58,25 @@ h3 {
   position: absolute;
 }
 
-.icon-container {
+.icon-container:first-of-type {
   width: 20px;
   background-color: #323547;
   border-radius: 100%;
   padding: 12px;
   margin: 0 auto;
   margin-top: 20px;
+}
+
+.icon-container {
+  width: 20px;
+  border-radius: 100%;
+  padding: 12px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.icon-container:hover {
+  background-color: rgba(50, 53, 71, 0.5);
 }
 
 .main-content {
@@ -428,6 +430,8 @@ hr {
   background-color: #323547;
 }
 /*
-.bounceIn {
-  animation-duration: 0.7s;
+.side-icon2:hover {
+  background-color: #323547;
+  border-radius: 100%;
+  padding: 12px;
 } */
