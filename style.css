@@ -181,11 +181,19 @@ h3 {
   margin-left: 10px;
 }
 
+.task-icon-box:hover {
+  background-color: #DDDDE2;
+}
+
 .ie-icon-box {
   background-color: #F0F0F4;
   display: inline-block;
   padding: 8px 10px;
   border-radius: 44px;
+}
+
+.ie-icon-box:hover {
+  background-color: #DDDDE2;
 }
 
 .ie-box {
