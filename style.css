@@ -350,6 +350,10 @@ h3 {
   transition: transform ease 0.2s;
 }
 
+.create-task:hover {
+  background-color: #66B981;
+}
+
 .create-task-overlay {
   background: rgba(100, 100, 100, 0.67);
   height: 100%;
