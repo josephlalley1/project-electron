@@ -84,7 +84,7 @@ h3 {
   height: 100%;
   right: 0;
   width: 92%;
-  position: absolute;
+  position: fixed;
 }
 
 .sound-icons {
@@ -117,7 +117,7 @@ h3 {
 }
 
 .circle-spacing {
-  padding-right: 10px;
+  padding-right: 4px;
 }
 
 .control-menu {
@@ -156,7 +156,7 @@ h3 {
 }
 
 .control-icon {
-  padding: 0 5px;
+  padding: 1px 5px 0 5px;
 }
 
 .task-controls {
@@ -275,6 +275,24 @@ h3 {
   font-size: 12px;
 }
 
+.minimise-button {
+  fill: #C4C4C4;
+  padding-top: 4px;
+}
+
+.minimise-button:hover {
+  fill: #ABABAB;
+}
+
+.exit-button {
+  fill: #FF6D6D;
+  padding-top: 4px;
+}
+
+.exit-button:hover {
+  fill: #E65454;
+}
+
 .entry-id {
   position: absolute;
   left: 70px;
@@ -350,6 +368,9 @@ h3 {
   transition: transform ease 0.2s;
 }
 
+.import-icon:hover {
+  fill: #5575E5;
+}
 .create-task:hover {
   background-color: #66B981;
 }
@@ -383,7 +404,7 @@ h3 {
 
 .profile-popup {
   background-color: white;
-  position: absolute;
+  position: fixed;
   width: 166px;
   left: 67px;
   z-index: -1;
