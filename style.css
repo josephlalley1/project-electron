@@ -170,6 +170,7 @@ h3 {
 }
 
 .controls-spacing {
+  padding-top: 1px;
   padding-left: 20px;
 }
 
@@ -215,7 +216,13 @@ h3 {
 }
 
 .th-checkbox {
-  padding-left: 24px;
+  border-radius: 3px;
+  padding: 7px;
+  margin-left: 17px;
+}
+
+.th-checkbox:hover {
+  background-color: rgba(234, 234, 241, 0.4);
 }
 
 .arrow-spacing {
@@ -462,9 +469,19 @@ hr {
 .profile-section:hover {
   background-color: #323547;
 }
-/*
-.side-icon2:hover {
-  background-color: #323547;
-  border-radius: 100%;
-  padding: 12px;
-} */
+
+.checkbox-deselected {
+  fill: #DEDEE6;
+}
+
+.checkbox-deselected:hover {
+  fill: #CDCDD5;
+}
+
+.selected-tasks {
+  fill: #DEDEE6;
+}
+
+.selected-tasks:hover {
+  fill: #CDCDD5;
+}
